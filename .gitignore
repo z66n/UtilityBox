@@ -30,3 +30,13 @@ out/
 hs_err_pid*
 replay_pid*
 
+# IDE-specific files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+
+# System files
+.DS_Store
