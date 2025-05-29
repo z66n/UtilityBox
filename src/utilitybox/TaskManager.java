@@ -34,6 +34,15 @@ public class TaskManager {
         }
     }
 
+    public void removeTask(int index) {
+        if (index >= 0 && index < tasks.size()) {
+            Task removed = tasks.remove(index);
+            System.out.println("Removed task: " + removed.name);
+        } else {
+            System.out.println("Invalid task number.");
+        }
+    }
+
     public void saveTasks() {
         try {
             File dir = new File("data");

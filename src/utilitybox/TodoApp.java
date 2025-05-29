@@ -11,6 +11,7 @@ public class TodoApp {
             System.out.println("1. Add Task");
             System.out.println("2. Show Tasks");
             System.out.println("3. Mark Task Done");
+            System.out.println("4. Remove Task");
             System.out.println("0. Back");
             System.out.print("Choice: ");
             String input = scanner.nextLine();
@@ -30,6 +31,16 @@ public class TodoApp {
                     try {
                         int index = Integer.parseInt(scanner.nextLine()) - 1;
                         manager.markDone(index);
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid number.");
+                    }
+                    break;
+                case "4":
+                    manager.listTasks();
+                    System.out.print("Enter task number to remove: ");
+                    try {
+                        int index = Integer.parseInt(scanner.nextLine()) - 1;
+                        manager.removeTask(index);
                     } catch (NumberFormatException e) {
                         System.out.println("Invalid number.");
                     }
