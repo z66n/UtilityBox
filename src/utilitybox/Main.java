@@ -9,8 +9,8 @@ public class Main {
             System.out.println("\n=== UtilityBox ===");
             System.out.println("1. To-Do List");
             System.out.println("2. Password Generator");
-            System.out.println("3. Diceware Passphrase Generator");
-	    System.out.println("0. Exit");
+            System.out.println("3. Passphrase Generator");
+	        System.out.println("0. Exit");
             System.out.print("Choose an option: ");
 
             String choice = scanner.nextLine();
